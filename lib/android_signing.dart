@@ -53,6 +53,7 @@ void _generateKeystore() {
     keystorePath,
     "-storepass",
     keystorePass!,
+    "-storetype JKS"
     "-keypass",
     keyPass!,
     "-keyalg",
