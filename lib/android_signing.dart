@@ -53,7 +53,6 @@ void _generateKeystore() {
     keystorePath,
     "-storepass",
     keystorePass!,
-    "-storetype JKS"
     "-keypass",
     keyPass!,
     "-keyalg",
@@ -61,7 +60,9 @@ void _generateKeystore() {
     "-keysize",
     "2048",
     "-validity",
-    "10000"
+    "10000",
+    "-storetype",
+    "JKS"
   ]);
   stdout.write(res.stdout);
   stderr.write(res.stderr);
